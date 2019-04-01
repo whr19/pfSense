@@ -18,7 +18,7 @@ Or add it under console/ssh.
 
 cd /root
 
-fetch https://raw.githubusercontent.com/whr19/Unofficial-pfSense-packages/master/pkg-wpad/files/install_wpad_24.sh
+fetch https://raw.githubusercontent.com/whr19/Secure-Tecnologia/master/pkg-wpad/files/install_wpad_24.sh
 
 sh ./install_wpad_24.sh
 
