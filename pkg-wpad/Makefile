@@ -7,7 +7,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	marcellocoutinho@gmail.com
+MAINTAINER=	milton.silva@securetecnologia.com.br
 COMMENT=	pfSense Unofficial wpad package
 
 LICENSE=	APACHE20
