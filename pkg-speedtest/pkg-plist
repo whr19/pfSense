@@ -1,7 +1,0 @@
-pkg/speedtest.xml
-www/diag_speedtest.php
-/etc/inc/priv/speedtest.priv.inc
-%%DATADIR%%/info.xml
-@dir /etc/inc/priv
-@dir /usr/local/www
-
