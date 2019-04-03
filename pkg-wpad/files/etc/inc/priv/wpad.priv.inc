@@ -4,7 +4,7 @@
  * wpad.priv.inc
  *
  * part of Unofficial packages for pfSense(R) softwate
- * Copyright (c) 2017 Marcello Coutinho
+ * Copyright (c) 2017 Milton Araujo
  * All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
