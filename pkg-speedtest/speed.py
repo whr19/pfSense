@@ -1617,7 +1617,7 @@ def parse_args():
         'speedtest.net.\n'
         '------------------------------------------------------------'
         '--------------\n'
-        'https://github.com/sivel/speedtest-cli')
+        'https://github.com/whr19/Secure-Tecnologia/master/pkg-speedtest/speedtest-cli')
 
     parser = ArgParser(description=description)
     # Give optparse.OptionParser an `add_argument` method for
