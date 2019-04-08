@@ -1782,7 +1782,7 @@ def shell():
     else:
         callback = print_dots(shutdown_event)
 
-    printer('Retrieving speedtest.net configuration...', quiet)
+    printer('Buscando informacoes do servidor do SpeedTest...', quiet)
     try:
         speedtest = Speedtest(
             source_address=args.source,
@@ -1812,11 +1812,11 @@ def shell():
                         raise
         sys.exit(0)
 
-    printer('Testing from %(isp)s (%(ip)s)...' % speedtest.config['client'],
+    printer('Testando o link da  %(isp)s (%(ip)s)...' % speedtest.config['client'],
             quiet)
 
     if not args.mini:
-        printer('Retrieving speedtest.net server list...', quiet)
+        printer('Recuperando a lista dos servidores da SpeedTest...', quiet)
         try:
             speedtest.get_servers(servers=args.server, exclude=args.exclude)
         except NoMatchedServers:
@@ -1836,18 +1836,18 @@ def shell():
         if args.server and len(args.server) == 1:
             printer('Retrieving information for the selected server...', quiet)
         else:
-            printer('Selecting best server based on ping...', quiet)
+            printer('Selecionando o melhor servidor baseado em ping...', quiet)
         speedtest.get_best_server()
     elif args.mini:
         speedtest.get_best_server(speedtest.set_mini_server(args.mini))
 
     results = speedtest.results
 
-    printer('Hosted by %(sponsor)s (%(name)s) [%(d)0.2f km]: '
+    printer('Hospedado por %(sponsor)s (%(name)s) [%(d)0.2f km]: '
             '%(latency)s ms' % results.server, quiet)
 
     if args.download:
-        printer('Testing download speed', quiet,
+        printer('Testando velocidade de download', quiet,
                 end=('', '\n')[bool(debug)])
         speedtest.download(
             callback=callback,
@@ -1861,7 +1861,7 @@ def shell():
         printer('Skipping download test', quiet)
 
     if args.upload:
-        printer('Testing upload speed', quiet,
+        printer('Testando velocidade de upload', quiet,
                 end=('', '\n')[bool(debug)])
         speedtest.upload(
             callback=callback,
