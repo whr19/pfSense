@@ -1834,7 +1834,7 @@ def shell():
             )
 
         if args.server and len(args.server) == 1:
-            printer('Retrieving information for the selected server...', quiet)
+            printer('Buscando informacoes do servidor selecionado...', quiet)
         else:
             printer('Selecionando o melhor servidor baseado em ping...', quiet)
         speedtest.get_best_server()
