@@ -1590,7 +1590,7 @@ def ctrl_c(shutdown_event):
     """
     def inner(signum, frame):
         shutdown_event.set()
-        printer('\nCancelling...', error=True)
+        printer('\nCancelando...', error=True)
         sys.exit(0)
     return inner
 
@@ -1617,7 +1617,7 @@ def parse_args():
         'speedtest.net.\n'
         '------------------------------------------------------------'
         '--------------\n'
-        'https://github.com/whr19/Secure-Tecnologia/master/pkg-speedtest/speedtest-cli')
+        'https://github.com/whr19/Secure-Tecnologia/tree/master/pkg-speedtest/speedtest-cli')
 
     parser = ArgParser(description=description)
     # Give optparse.OptionParser an `add_argument` method for
